@@ -27,3 +27,6 @@ If you want to change the name of your commit, before you have it "pushed", you 
 "git commit --amend -m "my new message""
 If you want to undo all changes you have made, and if you haven't commited, you can do : 
 "git reset --hard"
+
+Another git function : 
+"git status"

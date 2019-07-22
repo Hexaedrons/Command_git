@@ -1,23 +1,29 @@
-first : "git init" to initialize the index. 
+first : 
+"git init" to initialize the index. 
 Then 
-"git add myfile.txt" to add files to the index, or "git add . ". This add files to the git index. Being inside the folder isn't good enough ! 
-Once a new file had been add to the index via "git add", you must commit it. To describe your commit, use -m option as follow : 
-"git commit -m "This is my first commit !" "
-To obtain an history of all the commits made, ask git ! : " git log "
+"git add myfile.txt" to add files to the index, or 
+"git add . ". This add files to the git index. Being inside the folder isn't good enough ! 
+Once a new file had been add to the index via 
+"git add", you must commit it. To describe your commit, use -m option as follow : 
+"git commit -m " This is my first commit !" "
+To obtain an history of all the commits made, ask git ! : 
+" git log "
 Remark : For now, if you modify an already present file in your git index, the new versions is not saved under a commit. You need to re-add the new versions of your file inside the git index : 
-git add "myfile.txt", and then recommit it using git commit -m "I've update myfile.txt". You can do both of these action using : 
-git commit -a -m "I've update myfile.txt". The -a option specify to update files already contains inside the index.
+"git add "myfile.txt" ", and then recommit it using 
+"git commit -m "I've update myfile.txt"". You can do both of these action using : 
+"git commit -a -m "I've update myfile.txt"". The -a option specify to update files already contains inside the index.
 
 To go back on a commit (bug discovered for example), you can type : 
-git checkout SHAduCommit 
+"git checkout SHAduCommit"
 You can create a new branch from this commit (for example)
 If you want to return to the main branch, just type : 
-git checkout master
+"git checkout master"
 
-Oh baby oups I did it again...
+Oh baby oops I did it again...
 If you have made a mistake by creating a commit, you can't undo it (it's part of history now)
-However, you can do the opposite commit using : git revert SHAduCommit. This will create anewcommit, opposite to the previous one. 
+However, you can do the opposite commit using : 
+"git revert SHAduCommit". This will create anewcommit, opposite to the previous one. 
 If you want to change the name of your commit, before you have it "pushed", you can type : 
-git commit --amend -m "my new message"
+"git commit --amend -m "my new message""
 If you want to undo all changes you have made, and if you haven't commited, you can do : 
-git reset --hard
+"git reset --hard"

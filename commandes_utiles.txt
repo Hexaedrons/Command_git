@@ -70,3 +70,8 @@ If you want to find who have written which line in your file, you can do :
 Once you have a the beginning of the SHA, you can list details of the commit by typing : 
 "git show beginningOfSHA"
 
+Sometimes, you don't want all of your files to be accesible on gitHub/ GitLab. You have the possibility to hide some files using 
+"touch .gitignore". Inside the .gitignore file, you must specify local access to files you don't want to be saved on git. 
+As example, the file "AllMyPassword.txt" will be inside .gitignore. 
+you must add .gitignore to youre index though
+"git add .gitignore"

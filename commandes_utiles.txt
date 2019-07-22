@@ -31,4 +31,4 @@ If you want to undo all changes you have made, and if you haven't commited, you 
 Another git function : 
 "git status". It precise which branch we are in, and if modification have to be saved
 
-I change my name. is it ok when the repository is open? 
+I change my name. is it ok when the repository is open? Yes it is 

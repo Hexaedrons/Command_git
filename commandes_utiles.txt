@@ -1,3 +1,6 @@
-first : "git init" to initialize
+first : "git init" to initialize the index. 
 Then 
-"git add myfile.txt" to add files, or "git add . "
+"git add myfile.txt" to add files, or "git add . ". This add files to the git reposiroty. Being inside the folder isn't goog enough ! 
+Once a new file had been add to the index via "git add", you must commit it. To describe your commit, use -m option as foolow : 
+"git commit -m "This is my first commit !" "
+To obtain an history of all the commits made, ask git ! : " git log "

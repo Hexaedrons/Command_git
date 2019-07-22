@@ -13,3 +13,11 @@ git checkout SHAduCommit
 You can create a new branch from this commit (for example)
 If you want to return to the main branch, just type : 
 git checkout master
+
+Oh baby oups I did it again...
+If you have made a mistake by creating a commit, you can't undo it (it's part of history now)
+However, you can do the opposite commit using : git revert SHAduCommit. This will create anewcommit, opposite to the previous one. 
+If you want to change the name of your commit, before you have it "pushed", you can type : 
+git commit --amend -m "my new message"
+If you want to undo all changes you have made, and if you haven't commited, you can do : 
+git reset --hard

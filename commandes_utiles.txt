@@ -55,3 +55,6 @@ You can move from a branch to another using your monkey friends, or the command 
 "git checkout branch_test". One could note that this command is the same to acces a commit. 
 You can also do both creation and placement inside the branch using : 
 "git checkout -b branch_test"
+If you have stuff on a branch br_A that you want to put in a branch br_B, you must do :
+"git checkout br_A"
+"git merge br_B"

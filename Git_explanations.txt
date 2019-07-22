@@ -1,0 +1,5 @@
+Git is a group of function that allows you to work on a code and remember all the history of your modifications, also known as commits. 
+It allows you to use a previous commit, or version of your code, if you discover a bug or create one by a new modification. 
+
+In addition, these update can be synchronize to a remote repository, for example on GitHub (or GitLab, I suppose). This functionnality allow people to work on parallel on the same project. 
+You can used push and pull git function to synchronize your data to the remote servor, that contains the "origin"

@@ -1,6 +1,9 @@
 first : "git init" to initialize the index. 
 Then 
-"git add myfile.txt" to add files, or "git add . ". This add files to the git reposiroty. Being inside the folder isn't goog enough ! 
-Once a new file had been add to the index via "git add", you must commit it. To describe your commit, use -m option as foolow : 
+"git add myfile.txt" to add files to the index, or "git add . ". This add files to the git index. Being inside the folder isn't good enough ! 
+Once a new file had been add to the index via "git add", you must commit it. To describe your commit, use -m option as follow : 
 "git commit -m "This is my first commit !" "
 To obtain an history of all the commits made, ask git ! : " git log "
+Remark : For now, if you modify an already present file in your git index, the new versions is not saved under a commit. You need to re-add the new versions of your file inside the git index : 
+git add "myfile.txt", and then recommit it using git commit -m "I've update myfile.txt". You can do both of these action using : 
+git commit -a -m "I've update myfile.txt". The -a option specify to update files already contains inside the index. 

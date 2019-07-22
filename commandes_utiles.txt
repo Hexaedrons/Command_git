@@ -47,3 +47,11 @@ A correct use of push and pull function allow everyone to work on the same proje
 If you have created your repository on a local machine, you do not have an "origin" yet. Hence, you can create a repository inside GitHub (No command line version so far? ), and then link it to your local 
 project using : 
 "git remote add origin https://mysuperadressIgotonGithHub_Lab"
+
+You are by default working on branch called master. However, you can create a new branch, as a copy of existing branch in which you are, by typing : 
+"git branch branch_test". You can list several branch by typing :
+"git branch".  The branch with a * is the branch you are currently in. 
+You can move from a branch to another using your monkey friends, or the command :
+"git checkout branch_test". One could note that this command is the same to acces a commit. 
+You can also do both creation and placement inside the branch using : 
+"git checkout -b branch_test"

@@ -79,4 +79,6 @@ you must add .gitignore to youre index though
 While you are working on a branch, you might not want to commit every time you need to change what you are doing, to prevent a too large commit file. To save your current work on a branch, you can use: 
 "git stash". This allow you to save your current work in halt, and go test something else. Once you have again some time, you can do :
 "git stash pop" to recover your modification. If you want your modification to be applied directly (because it was in fact, good enough), you can do :
-"git stash apply" 
+"git stash apply"
+
+For pull request overview, see file "HowToContribute.txt" 

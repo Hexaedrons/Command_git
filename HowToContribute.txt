@@ -1,0 +1,14 @@
+Pull request (PR)
+
+You can contribute too many project in GitHub. 
+To do so, you first need to find a project you want to contribute too. Check if a pull request method is available. 
+If not : 
+1-) Fork the project, so that it's available from your account. 
+2-) Clone the fork project on your local machine. 
+3-) Create a Branch my_new_feature (english please), modify whatever you want inside it, commit it. 
+4-) push your branch to YOUR remote forked project: 
+"git push origin my_new_feature".
+5-) Now you have a modified forked project with a branch. You can ask your branch from YOUR forked project to be included/merged to the original project by clicking "Compare & pull request" button. You will be 
+asked to detail your updates. Be polite and effective, everything will be ok. 
+
+PS : One could note that your not pushing the master, but a branch. this way you cna compare branch to master, and submit the branch. 

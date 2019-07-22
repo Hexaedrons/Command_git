@@ -59,3 +59,14 @@ If you have stuff on a branch br_B that you want to put in a branch br_A, you mu
 "git checkout br_A"
 "git merge br_B". If the same file is modified (with commits and all the stuff) in both branche, you 'll have a conflict to solve. In this case, in br_A, a file in which conflict exist will have both version of code. Hence you can choose which one to keep, but a commit and then do a :
 "git commit"
+Additionnaly, once you have merged your branch, you can delete some using : 
+"git branch -d br_A". This will work if you already have pushed and merged the branch. If you just wand to delete it whatever its status, you can do : 
+"git branch -D br_A".
+In addition, if you wan to delete a remote branch, you can do : 
+"git push remote_name --delete br_A"
+
+If you want to find who have written which line in your file, you can do : 
+"git blame myfile.txt". This will list, in addition of the file, author, date, and the beginning of the SHA of the commit. 
+Once you have a the beginning of the SHA, you can list details of the commit by typing : 
+"git show beginningOfSHA"
+

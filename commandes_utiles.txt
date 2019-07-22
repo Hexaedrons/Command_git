@@ -75,3 +75,8 @@ Sometimes, you don't want all of your files to be accesible on gitHub/ GitLab. Y
 As example, the file "AllMyPassword.txt" will be inside .gitignore. 
 you must add .gitignore to youre index though
 "git add .gitignore"
+
+While you are working on a branch, you might not want to commit every time you need to change what you are doing, to prevent a too large commit file. To save your current work on a branch, you can use: 
+"git stash". This allow you to save your current work in halt, and go test something else. Once you have again some time, you can do :
+"git stash pop" to recover your modification. If you want your modification to be applied directly (because it was in fact, good enough), you can do :
+"git stash apply" 

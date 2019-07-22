@@ -6,4 +6,10 @@ Once a new file had been add to the index via "git add", you must commit it. To 
 To obtain an history of all the commits made, ask git ! : " git log "
 Remark : For now, if you modify an already present file in your git index, the new versions is not saved under a commit. You need to re-add the new versions of your file inside the git index : 
 git add "myfile.txt", and then recommit it using git commit -m "I've update myfile.txt". You can do both of these action using : 
-git commit -a -m "I've update myfile.txt". The -a option specify to update files already contains inside the index. 
+git commit -a -m "I've update myfile.txt". The -a option specify to update files already contains inside the index.
+
+To go back on a commit (bug discovered for example), you can type : 
+git checkout SHAduCommit 
+You can create a new branch from this commit (for example)
+If you want to return to the main branch, just type : 
+git checkout master

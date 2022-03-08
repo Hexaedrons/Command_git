@@ -8,7 +8,8 @@ Once a new file had been add to the index via
 "git commit -m " This is my first commit !" "
 To obtain an history of all the commits made, ask git ! : 
 " git log "
-Remark : For now, if you modify an already present file in your git index, the new versions is not saved under a commit. You need to re-add the new versions of your file inside the git index : 
+Remark : For now, if you modify an already present file in your git index, the new versions is not saved under a commit.
+You need to re-add the new versions of your file inside the git index : 
 "git add "myfile.txt" ", and then recommit it using 
 "git commit -m "I've update myfile.txt"". You can do both of these action using : 
 "git commit -a -m "I've update myfile.txt"". The -a option specify to update files already contains inside the index.
@@ -40,11 +41,13 @@ To upload modificated files, for examples the ones you previsouly download from 
 "git push origin master" this upload changed made in "master" into the remote branch "origin"
 
 Most of the time, you don't need to redownload all the repository each time a modification is made. the function : 
-"git pull origin master" (origin and master being the same as pus function) allow you to syncronize local repository so that you're up to date with the remote branch, hence with other people working on the 
+"git pull origin master" (origin and master being the same as pus function) allow you to syncronize local repository so that you're 
+up to date with the remote branch, hence with other people working on the 
 same project. 
 A correct use of push and pull function allow everyone to work on the same project.
 
-If you have created your repository on a local machine, you do not have an "origin" yet. Hence, you can create a repository inside GitHub (No command line version so far? ), and then link it to your local 
+If you have created your repository on a local machine, you do not have an "origin" yet. Hence, you can create a repository inside 
+GitHub (No command line version so far? ), and then link it to your local 
 project using : 
 "git remote add origin https://mysuperadressIgotonGithHub_Lab"
 
@@ -57,7 +60,8 @@ You can also do both creation and placement inside the branch using :
 "git checkout -b branch_test"
 If you have stuff on a branch br_B that you want to put in a branch br_A, you must do :
 "git checkout br_A"
-"git merge br_B". If the same file is modified (with commits and all the stuff) in both branche, you 'll have a conflict to solve. In this case, in br_A, a file in which conflict exist will have both version of code. Hence you can choose which one to keep, but a commit and then do a :
+"git merge br_B". If the same file is modified (with commits and all the stuff) in both branche, you 'll have a conflict to solve. 
+In this case, in br_A, a file in which conflict exist will have both version of code. Hence you can choose which one to keep, but a commit and then do a :
 "git commit"
 Additionnaly, once you have merged your branch, you can delete some using : 
 "git branch -d br_A". This will work if you already have pushed and merged the branch. If you just wand to delete it whatever its status, you can do : 
@@ -76,7 +80,8 @@ As example, the file "AllMyPassword.txt" will be inside .gitignore.
 you must add .gitignore to youre index though
 "git add .gitignore"
 
-While you are working on a branch, you might not want to commit every time you need to change what you are doing, to prevent a too large commit file. To save your current work on a branch, you can use: 
+While you are working on a branch, you might not want to commit every time you need to change what you are doing, to prevent a 
+too large commit file. To save your current work on a branch, you can use: 
 "git stash". This allow you to save your current work in halt, and go test something else. Once you have again some time, you can do :
 "git stash pop" to recover your modification. If you want your modification to be applied directly (because it was in fact, good enough), you can do :
 "git stash apply"

@@ -1,7 +1,7 @@
 Pull request (PR)
 
-You can contribute too many project in GitHub. 
-To do so, you first need to find a project you want to contribute too. Check if a pull request method is available. 
+You can contribute to many project in GitHub. 
+To do so, you first need to find a project you want to contribute to. Check if a pull request method is available. 
 If not : 
 1-) Fork the project, so that it's available from your account. 
 2-) Clone the fork project on your local machine. 

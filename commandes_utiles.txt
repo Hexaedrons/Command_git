@@ -39,9 +39,11 @@ To download a repository from GitHub (or GitLab I suppose), use :
 
 To upload modificated files, for examples the ones you previsouly download from https://mysuperadressIgotOnGitHub_Lab, do :
 "git push origin master" this upload changed made in "master" into the remote branch "origin"
+Do "git push" to upload your local commit
 
 Most of the time, you don't need to redownload all the repository each time a modification is made. the function : 
-"git pull origin master" (origin and master being the same as pus function) allow you to syncronize local repository so that you're 
+"git pull origin master" (origin and master being the same as in the previous
+push function) allow you to syncronize local repository so that you're 
 up to date with the remote branch, hence with other people working on the 
 same project. 
 A correct use of push and pull function allow everyone to work on the same project.
